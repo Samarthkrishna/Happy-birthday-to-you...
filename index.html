@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Birthday Wish</title>
+    <!-- IMPORTANT: Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🎂 Happy Birthday! 🎉</h1>
+            <p class="subtitle">A magical wish just for you</p>
+        </header>
+        
+        <!-- Birthday Card -->
+        <div class="birthday-card">
+            <!-- Cake -->
+            <div class="cake">
+                <div class="layer bottom"></div>
+                <div class="layer middle"></div>
+                <div class="layer top"></div>
+                <div class="icing"></div>
+                <div class="candle" id="candle1">
+                    <div class="flame"></div>
+                </div>
+                <div class="candle" id="candle2">
+                    <div class="flame"></div>
+                </div>
+                <div class="candle" id="candle3">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            
+            <!-- Message -->
+            <div class="message" id="message">
+                <p>May your day be filled with <span class="highlight">joy</span>, laughter, and beautiful moments. Wishing you the most wonderful birthday!</p>
+            </div>
+            
+            <!-- Name Input -->
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Enter your name here...">
+                <button id="personalizeBtn" class="btn">
+                    <i class="fas fa-magic"></i> Personalize Wish
+                </button>
+            </div>
+            
+            <!-- Interactive Buttons -->
+            <div class="button-group">
+                <button id="confettiBtn" class="action-btn">
+                    <i class="fas fa-fireworks"></i> Throw Confetti
+                </button>
+                <button id="musicBtn" class="action-btn">
+                    <i class="fas fa-music"></i> Play Music
+                </button>
+                <button id="surpriseBtn" class="action-btn">
+                    <i class="fas fa-gift"></i> Surprise!
+                </button>
+            </div>
+            
+            <!-- Surprise Message -->
+            <div id="surpriseMessage" class="surprise-message"></div>
+            
+            <!-- View Counter -->
+            <div class="counter">
+                <p>This wish has been viewed <span id="viewCount">1</span> times</p>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <span class="heart">❤️</span> for your special day</p>
+            <button id="shareBtn" class="share-btn">
+                <i class="fas fa-share-alt"></i> Share this Wish
+            </button>
+        </footer>
+    </div>
+    
+    <!-- Confetti Container -->
+    <div id="confettiContainer"></div>
+    
+    <!-- IMPORTANT: Link to JavaScript file AT THE BOTTOM -->
+    <script src="script.js"></script>
+    
+    <!-- Audio (Optional - can be added to script.js too) -->
+    <audio id="birthdayMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-happy-birthday-to-you-443.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
